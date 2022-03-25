@@ -1,0 +1,94 @@
+.card{
+    padding: 0px 10px 0px 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-self: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+    width: 800px;
+    height: 450px;
+    margin-left: 250px;
+    margin-top: 100px;
+    position: relative;
+}
+
+body{
+    background-attachment: fixed;
+    background-image:linear-gradient(hsl(273 75% 66%),hsl(240 73% 65%));
+    font-size: 12px;
+    font-family:'Kumbh Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+.card-left-2{
+    background-image: url('bg-pattern-desktop.svg');
+    background-position: right center;
+    max-width: 350px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.woman-img-mobile{
+    display: none;
+}
+h1{
+    font-weight: 1000;
+    color: hsl(237, 12%, 33%)
+}
+.box-img{
+    width: 150px;
+    position: absolute;
+    left:-70px ;
+    margin-top: 150px;
+}
+.woman-img{
+    width: 370px;
+    padding-left: 0px;
+    margin-top: 50px;
+    
+}
+
+.card-right{
+    padding: 30px;
+}
+.accordion{
+    width: 90%;
+    max-width: 300px;
+    max-height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-items{
+    color: hsl(240, 6%, 50%);
+}
+.accordion-header{
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    padding: 10px;
+    border-bottom: 0.5px solid hsl(240, 6%, 50%);
+    
+}
+.accordion-header::after{
+    content: url('icon-arrow-down.svg');
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.2 ease-in-out;
+}
+.accordion-header.active::after{
+    transform: rotate(180deg);
+}
+.accordion-header.active + .accordion-body{
+    display: block;
+}
+.accordion-body{
+    display: none;
+}
+.accordion-header.active{
+    font-weight: 900;
+}
+.accordion-header:hover{
+    color: hsl(14 88% 65%);
+}
